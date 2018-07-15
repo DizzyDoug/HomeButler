@@ -1,9 +1,10 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
+import { GarbageModule } from 'garbage/garbage.module';
 
 @Module({
-  imports: [],
+  imports: [GarbageModule],
   controllers: [AppController],
   providers: [AppService],
 })
